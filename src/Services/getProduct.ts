@@ -1,6 +1,6 @@
 import { Product } from "@/Models"
 
-export const getProduct = async (idProduct: string): Promise<Product> => {
+export const getProduct = async (idProduct: number): Promise<Product> => {
   const controller = new AbortController()
   const signal = controller.signal
 
